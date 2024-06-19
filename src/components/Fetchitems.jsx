@@ -13,7 +13,7 @@ const Fetchitems = () => {
         const signal = controller.signal;
 
         dispatch(fetchStatuSliceActions.markFetchingStarted());
-        fetch("https://react-myntra-clone-actual-node-backend.onrender.com/items", { signal })
+        fetch("https://myntra-backend-9tyg.onrender.com/items", { signal })
             .then((res) => res.json())
             .then(({ items }) => {
                 dispatch(fetchStatuSliceActions.markFetchDone());
